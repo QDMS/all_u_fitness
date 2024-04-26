@@ -13,7 +13,7 @@ import { Image } from "react-native"; // Import Image from react-native
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-const dumbellIcon = require("./assets/gifs/dumbell.gif");
+const dumbellsIcon = require("./assets/gifs/dumbells.gif");
 const timerIcon = require("./assets/gifs/timer.gif");
 const calculationIcon = require("./assets/gifs/calculate.gif");
 
@@ -29,7 +29,7 @@ export default function App() {
               case "Workout":
                 return (
                   <Image
-                    source={dumbellIcon}
+                    source={dumbellsIcon}
                     style={{ width: size * 1.5, height: size * 1.5 }}
                   />
                 );

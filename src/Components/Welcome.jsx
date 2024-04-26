@@ -3,6 +3,7 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useFonts } from "expo-font";
 import WorkoutOTD from "./WorkoutOTD";
+import Separator from "./Separator";
 
 const welcomeGif = require("../../assets/gifs/Welcome.gif");
 
@@ -31,7 +32,7 @@ const Welcome = () => {
         source={welcomeGif}
         style={{ width: 50 * 2, height: 50 * 2, alignSelf: "center" }}
       />
-      <WorkoutOTD />
+      
     </SafeAreaView>
   );
 };
