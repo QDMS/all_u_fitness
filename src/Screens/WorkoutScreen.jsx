@@ -1,19 +1,25 @@
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 import Welcome from '../Components/Welcome'
 import WorkoutOTD from '../Components/WorkoutOTD'
 import Separator from '../Components/Separator'
 import Category from '../Components/Category'
+import Exercise from '../Components/Exercise'
+import { SafeAreaView } from 'react-native-safe-area-context'
+
 
 const WorkoutScreen = () => {
   return (
-    <View>
+    <SafeAreaView className="mx-[2%]">
       <Welcome />
-      <WorkoutOTD />
-      <Separator />
-      <Category />
-      <Separator />
-    </View>
+      <ScrollView>
+        <WorkoutOTD />
+        <Separator />
+        <Category />
+        <Separator />
+        <Exercise />
+      </ScrollView>
+    </SafeAreaView>
   )
 }
 

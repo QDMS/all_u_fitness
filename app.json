@@ -1,11 +1,11 @@
 {
   "expo": {
     "name": "all_u_fit",
-    "slug": "all_u_fit",
+    "slug": "allufitness",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/AllUFitness.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/AllUFitness.png",
       "resizeMode": "contain",
@@ -15,19 +15,27 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tismstudios.allufitness"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/AllUFitness.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tismstudios.allufitness"
     },
     "web": {
       "favicon": "./assets/AllUFitness.png"
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4e9a1db5-4cd8-42db-b343-ebef71b009dd"
+      }
+    },
+    "owner": "tismstudios"
   }
 }

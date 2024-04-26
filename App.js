@@ -53,8 +53,8 @@ export default function App() {
           headerShown: false,
           tabBarStyle: {
             backgroundColor: "black",
-            borderTopRightRadius: 40,
-            borderTopLeftRadius: 40,
+            borderTopRightRadius: 20,
+            borderTopLeftRadius: 20,
             paddingVertical: 5,
           },
         })}
@@ -71,7 +71,7 @@ export default function App() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={TabNavigator} />
       </Stack.Navigator>
-      <StatusBar style="auto" />
+      <StatusBar style="dark" />
     </NavigationContainer>
   );
 }

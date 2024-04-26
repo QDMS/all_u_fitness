@@ -17,7 +17,7 @@ const Welcome = () => {
     return null;
   }
   return (
-    <SafeAreaView className="mx-[2%]">
+    <View>
       <Text
         style={{
           fontFamily: "Rockridge",
@@ -33,7 +33,7 @@ const Welcome = () => {
         style={{ width: 50 * 2, height: 50 * 2, alignSelf: "center" }}
       />
       
-    </SafeAreaView>
+    </View>
   );
 };
 
