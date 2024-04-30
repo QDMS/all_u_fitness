@@ -55,7 +55,9 @@ const ExerciseScreen = () => {
       const storageRef = ref(storage, `AllExercises/${item.gif_url}`);
       const url = await getDownloadURL(storageRef);
       setGifUrl(url);
-    } catch (error) {}
+    } catch (error) {
+      console.log("error = ", error);
+    }
   };
 
   useEffect(() => {

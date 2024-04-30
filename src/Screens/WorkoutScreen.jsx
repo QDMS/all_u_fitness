@@ -10,7 +10,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 
 const WorkoutScreen = () => {
   return (
-    <SafeAreaView className="mx-[2%]">
+    <SafeAreaView>
       <Welcome />
       <ScrollView>
         <WorkoutOTD />
